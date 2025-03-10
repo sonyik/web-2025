@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="styles/login_style.css"> 
-    </head>
-    <body>
-        <h1>Войти</h1>
-        <img src="images/photo.png" alt="Фото">
-        <div>
-            <form>
-                <label for="email">Электропочта</label>
-                <input type="text" id="email">
-                <span>Введите электропочту в формате *****@***.**</span>              
-                <label for="password">Пароль</label>
-                <input type="password" id="password">
-                <button><img src="images/Eye_off.svg" alt="Скрыть пароль"></button>
+<head>
+    <meta charset="UTF-8">
+    <title>Войти</title>
+    <link rel="stylesheet" href="styles/login_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Заголовок поверх изображения -->
+        <h1 class="main-header">Войти</h1>
+        
+        <img src="images/photo.png" alt="Интерфейс" class="interface-image">
+
+        <!-- Форма входа -->
+        <div class="login-form">
+            <form class="form-content">
+                <!-- Поле электронной почты -->
+                <label for="email" class="input-label">Электропочта</label>
+                <input type="email" id="email" class="email-input">
+                <span class="hint-text">Введите электропочту в формате *****@***.**</span>
+
+                <!-- Поле пароля -->
+                <label for="password" class="input-label">Пароль</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" class="password-input">
+                    <button class="toggle-password">
+                        <img src="images/Eye_off.svg" alt="Видимость пароля">
+                    </button>
+                </div>
+                
+                <!-- Кнопка продолжения -->
+                <button type="submit" class="submit-button">Продолжить</button>
             </form>
-            <button>Продолжить</button>
         </div>
-    </body>
+    </div>
+</body>
 </html>
