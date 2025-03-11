@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Profile</title>
-        <link rel="stylesheet" href="font.css">
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
-        <div>
-            <img src="images/Home.svg" alt="Лента">
-            <img src="images/Profile.svg" alt="Профиль">
-            <img src="images/New_post.svg" alt="Добавить пост">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/profile_style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="images/Home.svg" alt="Лента" class="nav-bar__icon">
+        <img src="images/Profile.svg" alt="Профиль" class="nav-bar__icon">
+        <img src="images/New_post.svg" alt="Добавить пост" class="nav-bar__icon">
+    </nav>
+
+    <div class="profile">
+        <img src="images/img.png" alt="Фото профиля" class="profile__avatar">
+        <h2 class="profile__name">Ваня Денисов</h2>
+        <p class="profile__bio">Привет! Я системный аналитик в ACME :) Тут моя жизнь только для самых классных!</p>
+        
+        <div class="stats">
+            <img src="images/Count_posts.svg" alt="Количество постов" class="stats__icon">
+            <span class="stats__count">43 поста</span>
         </div>
-        <img src="images/img.png" alt="Фото профиля">
-        <div>
-            <h2>Ваня Денисов</h2>
-        </div>
-        <div>
-            <span>Привет! Я системный аналитик в ACME :) Тут моя  
-                жизнь только для самых классных!</span>
-        </div>
-        <div>
-            <img src="images/Count_posts.svg" alt="Количество постов">
-            <span>43 поста</span>
-        </div>
-        <div>
-            <img src="images/IMG1.png" alt="Пост">
-            <img src="images/IMG2.png" alt="Пост">
-            <img src="images/IMG3.png" alt="Пост">
-            <img src="images/IMG4.png" alt="Пост">
-            <img src="images/IMG5.png" alt="Пост">
-            <img src="images/IMG6.png" alt="Пост">
-        </div>
-    </body>
+    </div>
+
+    <div class="gallery">
+        <img src="images/IMG1.png" alt="Пост" class="gallery__item">
+        <img src="images/IMG2.png" alt="Пост" class="gallery__item">
+        <img src="images/IMG3.png" alt="Пост" class="gallery__item">
+        <img src="images/IMG4.png" alt="Пост" class="gallery__item">
+        <img src="images/IMG5.png" alt="Пост" class="gallery__item">
+        <img src="images/IMG6.png" alt="Пост" class="gallery__item">
+    </div>
+</body>
 </html>

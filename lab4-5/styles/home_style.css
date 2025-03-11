@@ -1,0 +1,86 @@
+/* Навигационная панель */
+.nav-bar {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+}
+
+.nav-bar__icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* Блок поста */
+.post {
+    width: 700px;
+    margin: 16px 0;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.post__user {
+    display: flex;
+    gap: 10px;
+}
+
+.post__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.post__username {
+    font: 500 14px/18px 'Golos UI', sans-serif;
+    color: #222;
+}
+
+.post__edit {
+    width: 24px;
+    height: 24px;
+}
+
+.post__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.post__like {
+    display: flex;
+    gap: 3px;
+    padding: 6px 12px;
+    background: #f2f3f5;
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.post__like-count {
+    font: 400 15px/18px 'Golos UI', sans-serif;
+    color: #222;
+}
+
+.post__comment {
+    font: 400 15px/18px 'Golos UI', sans-serif;
+    color: #222;
+    margin: 8px 0;
+}
+
+.post__meta {
+    display: flex;
+    gap: 8px;
+}
+
+.post__expand {
+    color: #808080;
+    font: 400 13px/16px 'Golos UI', sans-serif;
+}
+
+.post__time {
+    color: #22222280;
+    font: 400 12px/14px 'Golos UI', sans-serif;
+}

@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="font.css">
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
-        <div>
-            <img src="images/Home.svg" alt="Лента">
-            <img src="images/Profile.svg" alt="Профиль">
-            <img src="images/New_post.svg" alt="Добавить пост">
-        </div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <img src="images/Avatar.svg" alt="Аватар">
-                        <span>Ваня Денисов</span>
-                    </div>
-                    <img src="images/Edit.svg" alt="Редактировать">
-                </div>
-                <img src="images/post.png" alt="Пост">
-                <button><img src="images/heart.png" alt="Лайк"><span>234</span></button>
-                <div>
-                    <span>Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский:
-                    «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном 
-                    снегом по ручку двери...» </span>
-                    <span>2 часа назад</span>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/home_style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="images/Home.svg" alt="Лента" class="nav-bar__icon">
+        <img src="images/Profile.svg" alt="Профиль" class="nav-bar__icon">
+        <img src="images/New_post.svg" alt="Добавить пост" class="nav-bar__icon">
+    </nav>
+
+    <article class="post">
+        <header class="post__header">
+            <div class="post__user">
+                <img src="images/Avatar.svg" alt="Аватар" class="post__avatar">
+                <span class="post__username">Ваня Денисов</span>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="images/Avatar_Lisa.svg" alt="Аватар">
-                        <span>Лиза Дёмина</span>
-                    </div>
-                </div>
-                <img src="images/Lisa_Post.png" alt="Пост">    
-            </div>
-        </div>
-    </body>
+            <img src="images/Edit.svg" alt="Редактировать" class="post__edit">
+        </header>
+
+        <img src="images/post.png" alt="Пост" class="post__image">
+
+        <button class="post__like">
+            <img src="images/heart.png" alt="Лайк">
+            <span class="post__like-count">234</span>
+        </button>
+
+        <p class="post__comment">Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: 
+        «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном снегом по ручку двери...»</p>
+
+        <footer class="post__meta">
+            <span class="post__expand">ещё</span>
+            <span class="post__time">2 часа назад</span>
+        </footer>
+    </article>
+</body>
 </html>

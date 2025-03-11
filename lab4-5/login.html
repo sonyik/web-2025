@@ -7,30 +7,25 @@
 </head>
 <body>
     <div class="main-container">
-        <!-- Заголовок поверх изображения -->
         <h1 class="main-header">Войти</h1>
         
         <img src="images/photo.png" alt="Интерфейс" class="interface-image">
 
-        <!-- Форма входа -->
-        <div class="login-form">
-            <form class="form-content">
-                <!-- Поле электронной почты -->
-                <label for="email" class="input-label">Электропочта</label>
-                <input type="email" id="email" class="email-input">
-                <span class="hint-text">Введите электропочту в формате *****@***.**</span>
+        <div class="form-content">
+            <form class="form">
+                <label for="email" class="form__label">Электропочта</label>
+                <input type="email" id="email" class="form__input">
+                <span class="form__hint">Введите электропочту в формате *****@***.**</span>
 
-                <!-- Поле пароля -->
-                <label for="password" class="input-label">Пароль</label>
+                <label for="password" class="form__label">Пароль</label>
                 <div class="password-wrapper">
-                    <input type="password" id="password" class="password-input">
-                    <button class="toggle-password">
+                    <input type="password" id="password" class="form__input">
+                    <button type="button" class="form__toggle-password">
                         <img src="images/Eye_off.svg" alt="Видимость пароля">
                     </button>
                 </div>
                 
-                <!-- Кнопка продолжения -->
-                <button type="submit" class="submit-button">Продолжить</button>
+                <button type="submit" class="form__submit">Продолжить</button>
             </form>
         </div>
     </div>

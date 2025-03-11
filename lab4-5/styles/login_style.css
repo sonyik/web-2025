@@ -1,63 +1,35 @@
-/* Основной контейнер */
+/* Блок: main-container */
 .main-container {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    margin: 0 auto;
-}
-
-/* Заголовок */
-.main-header {
-    position: absolute;
-    z-index: 2;
-    width: 385px;
-    height: 180px;
-    top: 182.37px;
-    left: 179px;
-    font: 700 140px/180px 'Golos UI', sans-serif;
-    letter-spacing: -1.5px;
-    color: #222222;
     margin: 0;
 }
 
-/* Изображение */
-.interface-image {
-    position: absolute;
-    width: 462px;
-    height: 501px;
-    top: 289px;
-    left: 269px;
-    object-fit: cover;
+/* Блок: main-header */
+.main-header {
+    font: 700 140px/180px 'Golos UI', sans-serif;
+    letter-spacing: -1.5px;
+    color: #222;
 }
 
-/* Форма входа */
-.login-form {
-    position: absolute;
-    width: 343px;
-    top: 415px;
-    left: 838px;
-}
-
+/* Блок формы */
 .form-content {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* Уменьшено с 16px */
+    gap: 8px;
 }
 
-.input-label {
+/* Элементы формы */
+.form__label {
     font: 400 15px/18px 'Golos UI', sans-serif;
-    color: #222222;
-    margin-bottom: 2px; /* Уменьшено с 4px */
+    color: #222;
 }
 
-.email-input,
-.password-input {
-    width: 100%;
+.form__input {
+    width: 343px;
     height: 44px;
-    background: #F2F3F5;
-    border: 1px solid #CCCCCC;
+    padding: 10px 12px 10px 12px;
+    background: #f2f3f5;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px 40px 10px 12px; /* Уменьшен вертикальный padding */
     box-sizing: border-box;
 }
 
@@ -65,32 +37,29 @@
     position: relative;
 }
 
-.toggle-password {
+.form__toggle-password {
     position: absolute;
     right: 12px;
     top: 22%;
+    padding: 0;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
-    width: 24px;
-    height: 24px;
 }
 
-.hint-text {
+.form__hint {
     font: 400 13px/16px 'Golos UI', sans-serif;
     color: #808080;
-    margin-top: 2px; /* Уменьшено с 4px */
 }
 
-.submit-button {
-    width: 100%;
-    height: 44px;
+.form__submit {
+    width: 343px;
+    height: 48px;
+    padding: 0;
     background: #000;
     color: #fff;
     border: none;
     border-radius: 10px;
     font: 500 16px 'Golos UI', sans-serif;
-    margin-top: 4px; /* Уменьшено с 8px */
     cursor: pointer;
 }
