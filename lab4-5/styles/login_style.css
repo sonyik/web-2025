@@ -1,23 +1,17 @@
-/* Блок: main-container */
 .main-container {
     margin: 0;
 }
 
-/* Блок: main-header */
 .main-header {
     font: 700 140px/180px 'Golos UI', sans-serif;
     letter-spacing: -1.5px;
     color: #222;
 }
 
-/* Блок формы */
 .form-content {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
 }
 
-/* Элементы формы */
 .form__label {
     font: 400 15px/18px 'Golos UI', sans-serif;
     color: #222;
@@ -39,7 +33,6 @@
 
 .form__toggle-password {
     position: absolute;
-    right: 12px;
     top: 22%;
     padding: 0;
     background: none;

@@ -1,6 +1,5 @@
-/* Блок навигации */
+
 .nav-bar {
-    display: flex;
     gap: 16px;
     padding: 12px;
 }
@@ -10,7 +9,7 @@
     height: 32px;
 }
 
-/* Блок профиля */
+
 .profile {
     margin: 24px 0;
 }
@@ -24,34 +23,31 @@
 
 .profile__name {
     font: 500 32px/1 'Golos UI', sans-serif;
-    color: #222;
+    color: #222222;
     margin: 12px 0;
 }
 
 .profile__bio {
     font: 400 15px/18px 'Golos UI', sans-serif;
-    color: #222;
+    color: #222222;
     max-width: 600px;
 }
 
-/* Блок статистики */
+
 .stats {
-    display: flex;
     gap: 8px;
     margin: 16px 0;
 }
 
 .stats__count {
     font: 400 15px/18px 'Golos UI', sans-serif;
-    color: #222;
+    color: #222222;
 }
 
-/* Галерея */
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
     gap: 2.5px;
-    max-width: 980px;
+    width: 976px;
 }
 
 .gallery__item {
