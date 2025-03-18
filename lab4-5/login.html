@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Войти</title>
-    <link rel="stylesheet" href="styles/login_style.css">
+    <link href="styles/login_style.css" rel="stylesheet">
+    <title>Login</title>
 </head>
 <body>
-    <div class="main-container">
-        <h1 class="main-header">Войти</h1>
-        
-        <img src="images/photo.png" alt="Интерфейс" class="interface-image">
-
-        <div class="form-content">
-            <form class="form">
-                <label for="email" class="form__label">Электропочта</label>
-                <input type="email" id="email" class="form__input">
-                <span class="form__hint">Введите электропочту в формате *****@***.**</span>
-
-                <label for="password" class="form__label">Пароль</label>
-                <div class="password-wrapper">
-                    <input type="password" id="password" class="form__input">
-                    <button type="button" class="form__toggle-password">
-                        <img src="images/Eye_off.svg" alt="Видимость пароля">
-                    </button>
+    <h1 class="header">Войти</h1>
+    <div class="wrapper">
+        <img class="image" src="images/photo.png" alt="photo">
+        <div class="form_wrapper">
+            <form class="login_form">
+                <div class="email_wrapper">
+                    <label for="email" class="form_labels">Электропочта</label>
+                    <input id="email" class="form_inputs input_error" type="text" name="address">
+                    <label class="form_labels email_label">Введите электропочту в формате *****@***.**</label>
                 </div>
-                
-                <button type="submit" class="form__submit">Продолжить</button>
+                <div class="password_wrapper">
+                    <label for="password" class="form_labels">Пароль</label>
+                    <div class="password_input_wrapper">
+                        <input id="password" class="form_inputs password_input input_error" type="password" name="password">
+                        <button class="eye_button" type="button">
+                            <img class="eye_button_img" src="images/Eye_off.svg" alt="Видимость пароля">
+                        </button>
+                    </div>
+                </div>
             </form>
+            <input class="submit_input" type="submit">
         </div>
-    </div>
+    </div> 
 </body>
 </html>
