@@ -1,85 +1,72 @@
-
-.nav-bar {
-    display: flex;
-    gap: 16px;
-    padding: 12px;
+@font-face {
+    font-family: "Golos UI";
+    src: url('Font/Golos-UI_Medium.ttf');
 }
 
-.nav-bar__icon {
+.avatar_img {
     width: 32px;
     height: 32px;
 }
 
-.post {
-    width: 700px;
-    margin: 16px 0;
+.user_name {
+    font-family: "Golos UI";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
 }
 
-.post__header {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 0;
+.likes_btn {
+    border: none;
+    width: 68px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #2222220D;    ;
+    border-radius: 8px;
+    font-family: "Golos UI";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    vertical-align: middle;
 }
 
-.post__user {
-    display: flex;
-    gap: 10px;
+.post_description {
+    font-family: "Golos UI";
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
 }
 
-.post__avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
+.more_btn {
+    padding: 0;
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Golos UI";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: #808080;
 }
 
-.post__username {
-    font: 500 14px/18px 'Golos UI', sans-serif;
-    color: #222;
+.post_data {
+    font-family: "Golos UI";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: #22222280;
 }
-
-.post__edit {
+.main_icons {
+    padding: 0;
     width: 24px;
     height: 24px;
-}
-
-.post__image {
-    width: 474px;
-    height: 474px;
-    border-radius: 8px;
-}
-
-.post__like {
-    display: flex;
-    gap: 3px;
-    padding: 6px 12px;
-    background: #f2f3f5;
+    background-color: transparent;
     border: none;
-    border-radius: 8px;
-    margin: 8px 0;
-}
-
-.post__like-count {
-    font: 400 15px/18px 'Golos UI', sans-serif;
-    color: #222;
-}
-
-.post__comment {
-    font: 400 15px/18px 'Golos UI', sans-serif;
-    color: #222;
-    margin: 8px 0;
-}
-
-.post__meta {
-    display: flex;
-    gap: 8px;
-}
-
-.post__expand {
-    color: #808080;
-    font: 400 13px/16px 'Golos UI', sans-serif;
-}
-
-.post__time {
-    color: #22222280;
-    font: 400 12px/14px 'Golos UI', sans-serif;
+    cursor: pointer;
 }

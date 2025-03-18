@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="home_style.css" rel="stylesheet">
     <title>Home</title>
-    <link rel="stylesheet" href="styles/home_style.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <img src="images/Home.svg" alt="Лента" class="nav-bar__icon">
-        <img src="images/Profile.svg" alt="Профиль" class="nav-bar__icon">
-        <img src="images/New_post.svg" alt="Добавить пост" class="nav-bar__icon">
-    </nav>
-
-    <article class="post">
-        <header class="post__header">
-            <div class="post__user">
-                <img src="images/Avatar.svg" alt="Аватар" class="post__avatar">
-                <span class="post__username">Ваня Денисов</span>
-            </div>
-            <img src="images/Edit.svg" alt="Редактировать" class="post__edit">
-        </header>
-
-        <img src="images/post.png" alt="Пост" class="post__image">
-
-        <button class="post__like">
-            <img src="images/heart.png" alt="Лайк">
-            <span class="post__like-count">234</span>
-        </button>
-
-        <p class="post__comment">Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: 
-        «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном снегом по ручку двери...»</p>
-
-        <footer class="post__meta">
-            <span class="post__expand">ещё</span>
-            <span class="post__time">2 часа назад</span>
-        </footer>
-    </article>
+    <div>
+        <button class="main_icons"><img src="images/home.svg" alt="Лента"></button>  
+        <img src="images/Dot.svg" alt="Under_dot">
+        <button class="main_icons"><img src="images/Profile.svg" alt="Профиль"></button>
+        <button class="main_icons"><img src="images/New_post.svg" alt="Добавить пост"></button>
+    </div>
+    
+    <div>
+        <img class="avatar_img" src="images/Avatar.svg" alt="Аватар">
+        <span class="user_name">Иван Иваныч</span>
+        <button><img src="images/Edit.svg" alt="Редактировать"></button>
+    </div>
+    
+    <img src="images/post.png" alt="Пост">
+    
+    <div>
+        <button class="likes_btn"><img src="images/heart.png" alt="Лайк">203</button>
+        <span class="post_description">Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном снегом по ручку двери...» </span>
+        <button class="more_btn">ещё</button>
+        <span class="post_data">2 часа назад</span>
+    </div>
 </body>
 </html>
