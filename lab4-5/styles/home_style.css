@@ -6,7 +6,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Golos UI";
+    font-family: "Golos UI", sans-serif;
 }
 
 .avatar_img {
@@ -15,7 +15,7 @@
 }
 
 .user_name {
-    font-family: "Golos UI";
+    font-family: "Golos UI", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -38,7 +38,7 @@
 }
 
 .post_description {
-    font-family: "Golos UI";
+    font-family: "Golos UI", sans-serif;
     display: block;
     font-weight: 400;
     font-size: 15px;
@@ -52,7 +52,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    font-family: "Golos UI";
+    font-family: "Golos UI", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
@@ -61,7 +61,7 @@
 }
 
 .post_data {
-    font-family: "Golos UI";
+    font-family: "Golos UI",sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
