@@ -8,7 +8,7 @@
 <body>
     <form method="post">
         <label for="num">Введите число</label>
-        <input type="number" name="number" min="0" max="9">
+        <input type="number" name="number" min="0" max="9" require>
     </form>
     <?php
         if (isset($_POST["number"]) && $_POST["number"] !== '') {

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Знаки зодиака</title>
 </head>
 <body>
     <h2>Знак зодиака</h2>
@@ -12,14 +13,12 @@
     <?php
     if (!empty($_POST["date"])) {
         $input = $_POST["date"];
-        // Удаляем все символы
         $digits = '';
         for ($i = 0; $i < strlen($input); $i++) {
             if (ctype_digit($input[$i])) {
                 $digits .= $input[$i];
             }
         }
-        // Извлекаем день и месяц
         if (strlen($digits) >= 4) {
             $day = intval(substr($digits, 0, 2));
             $month = intval(substr($digits, 2, 2));
@@ -39,7 +38,7 @@
             }
             echo "<p>" . zodiac($day, $month) . "</p>";
         } else {
-            echo "<p>Ошибка</p>";
+            echo "Ошибка";
         }
     }
     ?>
