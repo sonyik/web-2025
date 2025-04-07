@@ -9,31 +9,43 @@
     font-family: "Golos UI", sans-serif;
 }
 
-.user_name {
-    font-family: "Golos UI", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -0.25px;
-    color: #222222;
+/* Блок навигации */
+.nav-bar__icon {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.avatar_img {
+.nav-bar__separator {
+    /* Стили разделителя (при необходимости) */
+}
+
+/* Блок информации */
+.info__avatar {
     width: 123px;
     height: 123px;
 }
 
-.user_descr {
+.info__name {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    color: #222;
+}
+
+.info__description {
     display: block;
-    font-family: "Golos UI", sans-serif;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.15px;
-    color: #222222;
+    color: #222;
 }
 
-.posts_count {
-    font-family: "Golos UI", sans-serif;
+.info__counter {
     cursor: pointer;
     background-color: #F2F3F5;
     border: none;
@@ -46,16 +58,8 @@
     letter-spacing: -0.15px;
 }
 
-.gallery__post {
+/* Блок галереи */
+.gallery__item {
     width: 322.35px;
     max-height: 322.35px;
-}
-
-.nav-bar__icon {
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
