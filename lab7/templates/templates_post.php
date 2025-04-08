@@ -5,7 +5,10 @@
                 <button class="profile__edit-btn"><img src="images/Edit.svg" alt="Редактировать"></button>
             </div>
             <img class="post__image" src="<?= htmlspecialchars($post['image']) ?>" alt="Пост">
-            <span class="post__description"><?= htmlspecialchars($post['description']) ?></span>
-            <button class="post__more-btn">ещё</button> 
-            <span class="post__date"><?= date('d.m.Y', $post['date']) ?></span>
+            <div class="post__footer">
+                <button class="post__like-btn"><img src="images/heart.png" alt="Лайк"><?= htmlspecialchars($post['likes']) ?></button>
+                <span class="post__description"><?= htmlspecialchars($post['description']) ?></span>
+                <button class="post__more-btn">ещё</button> 
+                <span class="post__date"><?= date('d.m.Y', $post['date']) ?></span>
+            </div>
 </div>
