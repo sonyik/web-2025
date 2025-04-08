@@ -1,17 +1,17 @@
 <?php
-function loadJsonData($filename) {
-    if (!file_exists($filename)) {
-        die("Файл $filename не найден!");
-    }
-    $jsonData = file_get_contents($filename);
-    $data = json_decode($jsonData, true);
-    if (json_last_error() !== JSON_ERROR_NONE) {
-        die("Ошибка при чтении JSON: " . json_last_error_msg());
-    }
-    return $data;
+require_once 'validation.php';
+
+try {
+    // Загрузка данных
+    $users = json_decode(file_get_contents('data/users.json'), true);
+    $posts = json_decode(file_get_contents('data/posts.json'), true);
+
+    // Валидация
+    validateUsersData($users);
+    validatePostsData($posts, $users);
+
+} catch (Exception $e) {
+    die("Ошибка валидации: " . $e->getMessage());
 }
 
-// Загрузка данных пользователей и постов
-$users = loadJsonData('data/users.json');
-$posts = loadJsonData('data/posts.json');
-?>
+// Данные готовы к использованию
