@@ -8,7 +8,7 @@ CREATE TABLE posts (
     user_id INT,
     photo VARCHAR(255),
     text TEXT,
-    timestamp INT,
+    timestamp TIMESTAMP,
     likes INT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );

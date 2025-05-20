@@ -12,7 +12,7 @@ function isPrime(num) {
 // Основная функция
 function isPrimeNumber(input) {
     if (typeof input === 'number') {
-        if (isNaN(input)) {
+        if (isNaN(input)) {   // переписать условие
             console.error('Ошибка: переданный параметр не является числом');
             return;
         }
