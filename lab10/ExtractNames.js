@@ -11,10 +11,11 @@ function extractNames(users) {
 
 
 const users = [
-    { id: 1, name: "Alice" },
-    { id: 2, name: "Bob" },
-    { id: 3, name: "Charlie" }
+    { id: 1, name: "Alex" },
+    { id: 2, name: "Sergei" },
+    { id: 3, name: "Ivan" }
 ];
 
+const ErrorTest = 'adasdsad';
 extractNames(users);
-// Вывод: ["Alice", "Bob", "Charlie"]
+extractNames(ErrorTest);

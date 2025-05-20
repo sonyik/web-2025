@@ -16,4 +16,7 @@ function mapObject(obj, callback) {
 
 
 const nums = { a: 1, b: 2, c: 3 };
-mapObject(nums, x => x * 2) // { a: 2, b: 4, c: 6 }
+const ErrorTest = 'abcdassdsd'
+mapObject(nums, x => x * 2)
+mapObject(ErrorTest, x => x * 2)
+mapObject(nums, x => x + 1)

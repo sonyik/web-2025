@@ -11,5 +11,5 @@ function transformArray(arr) {
     return filtered;
 }
 transformArray([1, 2, 3, 4, 5]);
-// map:  [3, 6, 9, 12, 15]
-// filter: [12, 15]
+transformArray('asdasd');
+transformArray([5, 17, 34, 4, 51]);
