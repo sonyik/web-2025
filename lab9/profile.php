@@ -1,5 +1,4 @@
 <?php
-// profile.php
 require_once 'load_data.php';
 
 if (!isset($_GET['id'])) {

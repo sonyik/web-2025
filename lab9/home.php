@@ -7,20 +7,19 @@
 </head>
 <body>
     <div class="page">
-        <!-- Навигация -->
+        
         <div class="nav-bar">
             <button class="nav-bar__icon"><img src="images/home.svg" alt="Лента"></button>
             <button class="nav-bar__icon"><img src="images/Profile.svg" alt="Профиль"></button>
             <button class="nav-bar__icon"><img src="images/New_post.svg" alt="Добавить пост"></button>
         </div>
-
-        <!-- Основной контент -->
+     
         <div class="content-area">
             <div class="container">
                 <?php
                 require_once 'load_data.php';
 
-                // Фильтрация постов по user_id
+                
                 if (isset($_GET['user_id'])) {
                     $userId = (int)$_GET['user_id'];
                     if (validateUserIdExists($userId, $users)) {

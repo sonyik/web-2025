@@ -1,4 +1,3 @@
-<!-- templates/templates_profile.php -->
 <div class="info">
     <img class="info__avatar" src="<?= htmlspecialchars($user['avatar']) ?>" alt="Фото профиля">
     <h2 class="info__name"><?= htmlspecialchars($user['name']) ?></h2>

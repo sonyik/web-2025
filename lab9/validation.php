@@ -32,7 +32,7 @@ function validateUserIdExists($userId, $users) {
 function validateUsersData($users) {
     $userIds = [];
     foreach ($users as $user) {
-        // Проверка обязательных полей
+        
         $requiredFields = ['id', 'name', 'avatar', 'createdAt'];
         foreach ($requiredFields as $field) {
             if (!isset($user[$field])) {
@@ -40,7 +40,7 @@ function validateUsersData($users) {
             }
         }
 
-        // Проверка условий
+        
         $checks = [
             'id' => validateType($user['id'], 'int') && $user['id'] > 0,
             'name' => validateType($user['name'], 'string') && 
@@ -58,7 +58,7 @@ function validateUsersData($users) {
             throw new Exception("Невалидные данные пользователя ID: {$user['id']}");
         }
 
-        // Проверка уникальности ID пользователя
+        
         if (in_array($user['id'], $userIds)) {
             throw new Exception("Дубликат ID пользователя: {$user['id']}");
         }
@@ -70,7 +70,7 @@ function validateUsersData($users) {
 function validatePostsData($posts, $users) {
     $postIds = [];
     foreach ($posts as $post) {
-        // Проверка обязательных полей
+        
         $requiredFields = ['id', 'user_id', 'image', 'description', 'likes', 'date'];
         foreach ($requiredFields as $field) {
             if (!isset($post[$field])) {
@@ -78,7 +78,7 @@ function validatePostsData($posts, $users) {
             }
         }
 
-        // Проверка условий
+        
         $checks = [
             'id' => validateType($post['id'], 'int') && $post['id'] > 0,
             'user_id' => validateUserIdExists($post['user_id'], $users),
@@ -95,7 +95,7 @@ function validatePostsData($posts, $users) {
             throw new Exception("Невалидные данные поста ID: {$post['id']}");
         }
 
-        // Проверка уникальности ID поста (user_id может повторяться)
+        
         if (in_array($post['id'], $postIds)) {
             throw new Exception("Дубликат ID поста: {$post['id']}");
         }
