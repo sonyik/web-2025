@@ -4,8 +4,9 @@ function transformArray(arr) {
         return;
     }
 
-    const mapped = arr.map(x => x * 3);
-    const filtered = mapped.filter(x => x > 10);
+    const filtered = arr
+        .map(x => x * 3)
+        .filter(x => x > 10);
 
     console.log(filtered);
     return filtered;

@@ -8,12 +8,11 @@ function generatePassword(length) {
     const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const digits = '0123456789';
     const symbols = '!@#$%^&*()_+-=<>?';
-
+    const allChars = lowercase + uppercase + digits + symbols;
     function getRandomChar(str) {
         return str[Math.floor(Math.random() * str.length)];
     }
 
-    const allChars = lowercase + uppercase + digits + symbols;
 
     // Обязательные элементы пароля
     const passwordChars = [
@@ -29,7 +28,7 @@ function generatePassword(length) {
     }
 
     // Перемешиваем символы
-    return passwordChars.sort(() => Math.random() - 0.5).join('');
+    return passwordChars.join('');
 }
 console.log(generatePassword(8));
 console.log(generatePassword(16));

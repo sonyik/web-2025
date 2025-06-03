@@ -33,7 +33,7 @@ function validateUsersData($users) {
     $userIds = [];
     foreach ($users as $user) {
         // Проверка обязательных полей
-        $requiredFields = ['id', 'name', 'avatar', 'createdAt', 'posts_count'];
+        $requiredFields = ['id', 'name', 'avatar', 'createdAt'];
         foreach ($requiredFields as $field) {
             if (!isset($user[$field])) {
                 throw new Exception("Отсутствует поле '$field' у пользователя");
@@ -51,9 +51,7 @@ function validateUsersData($users) {
             'description' => (!isset($user['description']) || 
                             (validateType($user['description'], 'string') && 
                              validateLength($user['description'], 200))),
-            'createdAt' => validateTimestamp($user['createdAt'], true),
-            'posts_count' => validateType($user['posts_count'], 'int') && 
-                            $user['posts_count'] >= 0
+            'createdAt' => validateTimestamp($user['createdAt'], true)
         ];
 
         if (in_array(false, $checks, true)) {

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Golos UI";
-    src: url("../Fonts/Golos-UI_Medium.ttf");
+    src: url("../Fonts/Golos-UI_Regular.ttf");
 }
 
 * {
@@ -9,89 +9,172 @@
     font-family: "Golos UI", sans-serif;
 }
 
-/* Блок навигации */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    background: #fff;
+}
+
 .nav-bar {
-    /* Стили контейнера (при необходимости) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding: 20px 10px;
+    background: #fff;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .nav-bar__icon {
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    background: none;
     border: none;
     cursor: pointer;
 }
 
-.nav-bar__separator {
-    /* Стили разделителя (при необходимости) */
+.nav-bar__icon:hover {
+    background-color: #f0f0f0;
 }
 
-/* Блок профиля */
+.content-area {
+    margin-left: 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    width: calc(100% - 80px);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.post {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 15px;
+    position: relative; 
+}
+
 .profile__avatar {
     width: 32px;
     height: 32px;
+    border-radius: 8px; 
+    object-fit: cover;
 }
 
-.profile__name {
-    font-weight: 500;
+.post__author {
+    font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
+    color: #111;
+    white-space: nowrap;
+    margin-left: 10px;
+    text-decoration: none;
 }
+
 
 .profile__edit-btn {
-    /* Стили кнопки редактирования (при необходимости) */
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border: none;
+    background: none;
+    padding: 0;
+    position: absolute; 
+    right: 0; 
 }
 
-/* Блок поста */
+.profile__edit-btn:hover {
+    opacity: 1;
+}
+
+
+.profile__info {
+    display: flex;
+    align-items: center; 
+}
+
 .post__image {
-    /* Стили изображения поста */
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 12px;
 }
 
 .post__footer {
-    /* Стили футера поста */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
 }
 
 .post__like-btn {
+    display: inline-flex;
+    align-items: center;
+    background: none;
     border: none;
-    width: 68px;
-    height: 30px;
     cursor: pointer;
-    background-color: #2222220D;
-    border-radius: 8px;
     font-weight: 400;
     font-size: 15px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
-    vertical-align: middle;
+    color: #000000;
+    user-select: none;
+    padding: 0;
 }
-
-.post__description {
+  
+.like-icon {
+    width: 20px;
+    height: 20px;
     display: block;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
+    margin-right: 8px;
+}
+  
+.post__description {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+    flex: 1;
+    min-width: 100%;
 }
 
 .post__more-btn {
-    padding: 0;
-    display: block;
+    background: none;
     border: none;
+    color: #888;
+    font-size: 14px;
     cursor: pointer;
-    background-color: transparent;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
-    color: #808080;
+    padding: 0;
 }
 
 .post__date {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
-    color: #22222280;
+    color: #888;
+    font-size: 12px;
+    margin-left: auto;
 }
