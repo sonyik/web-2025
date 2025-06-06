@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Golos UI";
+    src: url("../Fonts/Golos-UI_Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Golos UI", sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding: 20px 10px;
+    background: #fff;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.nav-bar__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-bar__icon:hover {
+    background-color: #f0f0f0;
+}
+
+.content-area {
+    margin-left: 80px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 40px 20px;
+    width: calc(100% - 80px);
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.info__avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 1px solid #eee;
+}
+
+.info__name {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 8px;
+    color: #111;
+}
+
+.info__description {
+    font-size: 14px;
+    color: #3b3b3b;
+    max-width: 500px;
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+.info__counter {
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #6e6e6e;
+    border: none;
+    cursor: default;
+}
+
+.info__counter img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px;
+    width: 100%;
+}
+
+.gallery__item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: transform 0.2s;
+}
+
+.gallery__item:hover {
+    transform: scale(1.02);
+}

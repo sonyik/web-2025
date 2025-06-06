@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Иван Иваныч",
+      "avatar": "images/Avatar.svg",
+      "description": "Весёлый позитивный",
+      "createdAt": 1630454400000
+    },
+    {
+      "id": 2,
+      "name": "Алексей Петров",
+      "avatar": "images/Avatar.svg",
+      "description": "Весёлый",
+      "createdAt": 1630540800000
+    }
+  ]

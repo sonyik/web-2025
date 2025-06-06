@@ -177,3 +177,81 @@ body, html {
     font-size: 12px;
     margin-left: auto;
 }
+
+
+.slider {
+    position: relative;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background: #000;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.slider-arrow:hover {
+    opacity: 1;
+    background: rgba(0,0,0,0.6);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.slider-indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(34, 34, 34, 0.5); 
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+    height: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 4px;
+}
